@@ -1,0 +1,95 @@
+  //Salvando as imagens enviadas nas pastas
+    if(isset($_FILES['image1'])) {
+
+        if(!empty($_FILES['image1']['name'])) {
+            $nameImage1 = $_FILES['image1']['name'];
+            $typeImage1 = $_FILES['image1']['type'];
+            $tmpImage1 = $_FILES['image1']['tmp_name'];
+            $sizeImage1 = $_FILES['image1']['size'];
+            $errosImage1 = [];
+
+            //Propriedades da imagem
+            $imageMaxSize = 1024 * 1024 * 3;
+            $formatosPermitidos = ["image/jpg", "image/png", "image/jpeg"];
+
+            //Identificação dos erros ao enviar a imagem
+            //Tamanho da imagem
+            //Formato da imagem
+
+            if ($sizeImage1 > $imageMaxSize) {
+                $errosImage1[] = "<p class='cadprod-img-error'>O tamanho do arquivo é muito grande</p>"; 
+            };
+
+            if (!in_array($typeImage1, $formatosPermitidos)) {
+                $errosImage1[] = "<p class='cadprod-img-error'>O formato do Arquivo não é permitido</p>";
+            };
+
+            if(!empty($errosImage1)) {
+                foreach($errosImage1 as $erros1) {
+                    echo "<script>
+
+                        var fileImage1 = document.getElementById('image1')
+                        fileImage1.innerHTML =+ $erros1;
+                        
+                    </script>";
+                };
+            } else {
+                $caminhoImage1 = "../midia/Foto/instrumento/$nome(1)";
+                move_uploaded_file($tmpImage1, $caminhoImage1);
+            };
+        };
+
+        if(isset($_FILES['image2'])) {
+
+            if(!empty($_FILES['Image2']['name'])) {
+                $nameImage2 = $_FILES['Image2']['name'];
+                $typeImage2 = $_FILES['Image2']['type'];
+                $tmpImage2 = $_FILES['Image2']['tmp_name'];
+                $sizeImage2 = $_FILES['Image2']['size'];
+                $errosImage2 = [];
+
+                //Propriedades da imagem
+                $imageMaxSize = 1024 * 1024 * 3;
+                $formatosPermitidos = ["image/jpg", "image/png", "image/jpeg"];
+
+                //Identificação dos erros ao enviar a imagem
+                //Tamanho da imagem
+                //Formato da imagem
+
+                if ($sizeImage2 > $imageMaxSize) {
+                    $errosImage2[] = "<p class='cadprod-img-error'>O tamanho do arquivo é muito grande</p>"; 
+                };
+
+                if (!in_array($formatosPermitidos, $typeImage2)) {
+                    $errosImage2[] = "<p class='cadprod-img-error'>O formato do Arquivo não é permitido</p>";
+                };
+
+                if(!empty($errosImage2)) {
+                    foreach($errosImage2 as $erros2) {
+                        echo "<script>
+
+                            var fileImage2 = document.getElementById('Image2')
+                            fileImage2.innerHTML =+ $erros2;
+                            
+                        </script>";
+                    };
+                } else {
+                    $caminhoImage2 = "../midia/Foto/instrumento/$nome(2)";
+                    move_uploaded_file($tmpImage2, $caminhoImage2);
+
+                    //Adicionar a notificação de que o produto foi adicionado
+                };
+            };
+        };
+
+
+        CREATE TABLE imagens (caminho varchar(50));
+
+        const input = document.querySelector("#input");
+
+input.addEventListener("keypress", function(e) {
+
+    if(e.key === ",") {
+        e.preventDefault();
+    }
+  

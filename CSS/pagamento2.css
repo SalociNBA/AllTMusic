@@ -1,0 +1,86 @@
+.pagamento-content {
+    display: flex;
+    padding: 0vh 10%;
+    margin-top: 1vh;
+}
+.forma-pagamento-content > label > img {
+    max-height: 4vh;
+    max-width: 4vh;
+}
+
+.pedido-infos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.forma-pagamento-div {
+    display: block;
+    padding: 2vh 2vw;
+    padding-top: 0vh;
+    width: 100%;
+}
+
+.endereco-entrega{
+    padding: 2vh 2vw;
+    padding-top: 0vh;
+    width: 100%;
+}
+.endereco-entrega > a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.2vh 0.5vw;
+    background-color: rgb(0, 180, 0);
+    color: white;
+    margin: 2vh;
+    border-radius: 1vh;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 2vh;
+}
+
+.pagamentos-dados-user {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.pagamentos-infos-compra {
+    width: 50%;
+    height: 100%;
+    background: rgb(207, 207, 207);
+    padding: 0vh 2vw;
+    border-radius: 3vh;
+}
+.pagamentos-infos-compra > h2 {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center; 
+    margin-bottom: 2vh;
+}
+td{
+    padding: 0.5vh 2vw;
+    border-top: solid 1px black;
+}
+
+.finalizar_compra {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    border-top: solid 1px black;
+    align-items: center;
+    padding: 0vh 1vw;
+}
+.finalizar_compra > h3 {
+    margin-left: auto;
+}
+.btn_finalizar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.btn_finalizar > input[type=submit] {
+    height: 4vh;
+    width: 16vw;
+    margin-bottom: 2vh;
+}

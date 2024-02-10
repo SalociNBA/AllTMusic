@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    background: url(../midia/Fotos/tela\ de\ login\ 3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+html{
+    height: 100%;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+a{
+    color: #5158FF;
+    text-decoration: none;
+}
+
+/* Parte do cabeçalho do site, onde fica o logo e a barra de pesquisa e/ menu */
+/*==============================================================================================*/
+
+.main-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.quadrado{
+    display: flex;
+    flex-direction: row;
+
+    /* Propriedades de aparencia */
+    height: 80vh;
+    overflow: hidden;
+    border-radius: 2.5vh;
+    /* horizontal, vertical, suavização, cor (é possivel adicionar multiplas sombras colocando uma virgula na frente e usando as mesmas propriedades.*/
+    box-shadow: 0.5vw 1vh 25px;
+
+}
+
+/* lado esquerdo da tela de login */
+
+.lLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.lLogin img{
+    height: 100%;
+}
+
+/* Lado direito da tea de login */
+
+.rLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 35vw;
+    padding: 15px 30px;
+}
+.data{
+    display: flex;
+    flex-wrap: wrap;
+
+    /* posição dos itens */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* configurações de aparencia*/
+    height: 100%;
+    width: 100%;
+}
+.data h1{
+    font-size: 6vh;
+    font-style: italic;
+    border-bottom: solid 0.5vh orange;
+    padding: 0 3vw;
+
+    /*margin-bottom: auto;*/
+    margin-top: 4vh;
+    margin-bottom: 11vh;
+}
+
+.entrada{
+    width: 25vw;
+    height: 4vh;
+    border: none;
+    border-bottom: 0.1vh solid #4f30677d;
+    margin-bottom: 5vh;
+
+    /* Configurações de fonte */
+    font-size: 2vh;
+}
+.entrada::placeholder{
+    font-size: 2vh;
+}
+#password {
+    margin-bottom: 1.5vh;
+}
+
+#check {
+    margin-bottom: auto;
+    transform: translate(-16.5vh);
+}
+#check > label {
+    font-size: 2vh;
+}
+
+.data button {
+    /* configurações de aparencia*/
+    width: 25vw;
+    height: 6.4vh;
+    background: #5158FF;
+    border-radius: 1.5vh;
+    border: none;
+
+    /* configurações de texto*/
+    color: white;
+    text-transform: uppercase;
+    font-size: 2vh;
+    font-weight: bold;
+
+}
+.data a{
+    text-decoration: none;
+}
+
+.data > #no-acc {
+    font-size: 2vh;
+    margin-top: 7vh;
+}
+
+.data > #no-pass {
+    font-size: 2vh;
+    margin-top: 0.1vh;
+}
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+
+}

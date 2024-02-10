@@ -1,0 +1,395 @@
+/* PARTE GERAL DO CSS, UTILIZADA EM TODAS AS ABAS DO SITE COMPLETO */
+body{
+    margin: 0%;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+    /* Cabeçalho */
+    /* menu */
+/*=====================================================================================================*/
+.header-site {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.white-space {
+    display: flex;
+    width: 100%;
+    height: 21.5vh;
+}
+
+header {
+    /* propriedades do display */
+    display: flex;
+    background: #1E1E1E;
+
+    /*Propriedades do Tamamnho*/
+    width: 100%;
+    height: 15vh;
+
+    /* Propriedades de posicionamento dos itens */
+    padding: 0% 10%;
+    align-items: center;
+}
+
+/*=====================================================================================================*/
+
+/* Logo do Cabeçalho */
+header > a {
+    display: flex;
+
+    /*Propriedades do Tamamnho*/
+    height: 15vh;
+
+    /* Propriedades de posicionamento dos itens */
+    margin-right: 2vw;
+}
+
+/*=====================================================================================================*/
+
+/* Icone de Menu para abrir o dropdown */
+
+.menu-drop-btn {
+    width: 2.8vw;
+}
+
+/*Dropdown*/
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+img.menu-drop-btn {
+    display: inline-block;
+}
+
+li.menu-dropdown-header {
+    display: inline-block;
+}
+
+.menu-dropdown-content{
+    /* Propriedades do display */
+    display: none;
+
+    /* Propriedades de posição */
+    position: absolute;
+
+    /* Propriedades de aparencia */
+    background-color: white;
+    border-left: Solid 0.4vw #C447FF;
+}
+
+/* Aqui fará o dropdown aparecer quando colocar o mouse acima do icone do menu */
+
+.menu-dropdown-header:hover .menu-dropdown-content {
+    display: flex;
+}
+
+/* DEFINE AS CONFIGURAÇÕES DE CADA CATEGORIA DO DROPDOWN */
+.menu-cts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5vh;
+
+}
+.menu-cts:hover {
+    background-color: aliceblue;
+}
+.menu-cts > h2 {
+    margin: 1.5vh 1.8vw;
+    padding: 0vh 1vw;
+
+    /* Configurações de visual */
+    border-bottom: #fcd441 solid 0.4vh;
+
+    /* Config Fonte */
+    font-style: italic;
+    font-size: 2.5vh;
+}
+.menu-cts > a {
+    display: flex;
+    background: none;
+    border: none;
+
+    /* Configurações do texto */
+    text-decoration: none;
+    color: #1E1E1E;
+    font-size: 2vh;
+
+    /* Configurações de posicionamento */
+    padding: 1.5vh 1.6vw;
+}
+.menu-cts > a:hover {
+    background-color: #ff0303;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+/*=====================================================================================================*/
+
+/* Input de pesquisa de produtos */
+
+.form-search-header {
+    /* Configurações de aparencia */
+    display: flex;
+    margin-left: auto;
+}
+
+.search-header {
+
+    /* Configurações de aparencia */
+    display: flex;
+    border: solid 0.4vh #c447ff;
+    border-radius: 1.5vw;
+        /* Configurações de Tamamnho */
+        height: 4vh;
+        width: 35vw;
+}
+.search-header::placeholder {
+    /* Configuração da aparencia */
+    color: #383838;
+    text-transform: uppercase;
+    font-size: 1.3vh;
+    font-style: italic;
+}
+
+/*=====================================================================================================*/
+
+/* icone de usuário para efetuar login ou fazer registro */
+#user-header {
+    display: flex;
+    margin-left: auto;
+}
+
+.user-drop-btn {
+    display: flex;
+    height: 2.4vw;
+}
+
+.user-dropdown-content {
+    /* Configurações de aparencia */
+    display: none;
+    background: white;
+
+    /* Configurações de posição */
+    position: absolute;
+}
+
+.user-dropdown-header:hover .user-dropdown-content {
+    display: flex;
+}
+
+/* DEFINE AS CONFIGURAÇÕES DE CADA CATEGORIA DO DROPDOWN DO USER*/
+.user-cts {
+    display: flex;
+    flex-direction: column;
+    
+    /* Configurações visuais */
+    align-items: center;
+    padding: 1.5vh 0vw;
+    border-top: 0.7vh solid #C447FF;
+}
+
+.user-cts > h2 {
+    margin: 1.5vh 1.8vw;
+    padding: 0vh 1vw;
+    border-bottom: #fcd441 solid 3px;
+
+    /* Config Fonte */
+    font-style: italic;
+}
+.user-cts > a {
+    display: flex;
+    text-decoration: none;
+    color: #1E1E1E;
+    padding: 1.5vh 1.6vw;
+}
+.user-cts > a:hover {
+    background-color: #ff0303;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+
+/*=====================================================================================================*/
+
+/* icone de usuário para efetuar login ou fazer registro */
+
+.cart-header {
+    display: flex;
+    height: 6vh;
+    margin-left: 2.5vw;
+}
+
+/*=====================================================================================================*/
+
+/* Barra de navegação dos icones para pesquisa */
+nav {
+    display: flex;
+    background-color: #fcd441;
+
+    /* Propriedades de tamanho */
+    height: 6.5vh;
+    width: 100%;
+
+    /* Propriedades de posição */
+    padding: 0 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav > a {
+    display: flex;
+    border: none;
+    flex:auto;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+nav > a:hover {
+    border-bottom: solid 0.6vh #c447ff;
+}
+/* Botão cordas */
+#button1 > img{
+    height: 5vh;
+}
+/* Botão teclas */
+#button2 > img{
+    height: 4.5vh;
+}
+/* Botão Amplificador */
+#button3 > img{
+    height: 4.5vh;
+}
+/* Botão Percussão */
+#button4 > img{
+    height: 4.5vh;
+}
+#button5 > img{
+    height: 4.5vh;
+}
+#button6 > img{
+    height: 4.5vh;
+}
+
+/*=====================================================================================================*/
+
+/* footer */
+footer {
+    display: flex;
+
+    /* Config de aparencia */
+    background-color: #1E1E1E;
+    border-top: #c447ff solid 1vh;
+    height: 50vh;
+    width: 100%;
+    padding: 0 10%;
+    flex-wrap: wrap;
+
+    /* config de posição */
+    margin-top: 1.5vh;
+}
+
+.left-content-footer {
+    display: flex;
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents-footer {
+    display: inline-flex;
+
+    /* Configurações de aparencia */
+    flex-direction: column;
+    align-items: center;
+    margin: 0vh 3vw;
+    height: fit-content;
+}
+
+.contents-footer > h1 {
+    color: white;
+    font-size: 2vw;
+    font-style: italic;
+    margin-top: 1.5vh;
+}
+.contents-footer > a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1.5vh;
+    font-size: 2vh;
+}
+
+/*=====================================================================================================*/
+
+/* Lado direito do footer */
+
+.right-content-footer {
+    display: inline-flex;
+    flex: 50%;
+
+    /* Propriedade de posicionamento dos itens */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-footer {
+    display: flex;
+    height: 30vh;
+
+    /* propriedades de posicionamento */
+    justify-content: center;
+}
+
+.logo-footer > a > img {
+    height: 100%;
+}
+
+.icons-footer {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+.icons-footer > a > img {
+    height: 5vh;
+    margin: 0 0.5vw;
+}
+/*=====================================================================================================*/
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+    
+}

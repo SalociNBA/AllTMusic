@@ -1,0 +1,55 @@
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+.header-hidden{
+    display: none;
+}
+
+.content-search-products {
+    display: flex;
+    width: 100%;
+    padding: 1vh 10%;
+    flex-direction: column;
+}
+
+.display-products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.pag-nums-search{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Filtros de pesquisa da pagina search Products */
+.pag-search-filtros-produtos {
+    display: flex;
+    flex-direction: row;
+}
+
+.filtros-pesquisa {
+    display: block;
+
+    width: 20vw;
+    max-height: 100%;
+
+    background-color: rgb(224, 224, 224);
+    border-radius: 1.5vh;
+
+    padding: 2vh 1vw;
+}
+
+.pag-search-filtro-preco > input{
+    width: 5vw;
+}
+

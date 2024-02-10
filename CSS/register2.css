@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    background: url(../midia/Fotos/tela\ de\ login\ 3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+
+    /* PROPRIEDADE DE POSICIONAMENTO DOS ITENS NO CENTRO */
+    justify-content: center;
+    align-items: center;
+}
+html{
+    height: 100%;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+/*Grande quadrado que pega a tela inteira, para posicionar o quadrado dos dados no centro*/
+/*=========================================================================================================================================================================*/
+.square {
+    display: flex;
+
+    /* Config da aparencia*/
+    height: 100%;
+
+    /* Config da posição dos itens */
+    justify-content: center;
+    align-items: center;
+}
+
+/*=========================================================================================================================================================================*/
+
+.image {
+
+    /* cONFIGURAÇÕES DA IMAGEM DO BACKGROUND */
+    background-image: url(../midia/Fotos/registro.jpg);
+    background-size: cover;
+    background-position: right;
+
+    /* PROPRIEDADES DO DISPLAY */
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+
+    /* PROPRIEDADES DE APARENCIA */
+    height: 90vh;
+    width: 50%;
+    justify-content: right;
+    align-items: center;
+}
+
+/*=========================================================================================================================================================================*/
+
+.register {
+    display: flex;
+    overflow: hidden;
+
+    /* PROPRIEDADES DE APARENCIA */
+    border: solid 1px black;
+    border-radius: 3vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.5vh 1vw 15px;
+    width: 80%;
+    height: max-content;
+
+    /* PROPRIEDADES DE POSIÇÃO */
+    align-items: center;
+    justify-content: center;
+}
+
+select {
+    color: rgb(134, 134, 134);
+    border: 2px solid rgb(192, 192, 192);
+    border-radius: 10px;
+    height: 4vh;
+    width: fit-content;
+    text-align: center;
+}
+
+a{
+    color: #5158FF;
+    text-decoration: none;
+}
+
+label{
+    color: black;
+    margin-top: 1vh;
+}
+input {
+    border:  2px solid rgb(192, 192, 192);
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    margin: 0.2vw;
+}
+   
+input:active {
+    box-shadow: 2px 2px 15px #ffc800 inset;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+#form {
+    display: flex; 
+    width: 100%; 
+    justify-content: left
+}
+#form > h1{
+    font-style: italic;
+}
+.conjunto-dados{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.conjunto-dados-select {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.dados{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.dados-select{
+    display: flex;
+    flex-direction: column;
+    margin: 0vh 0.5vw;
+}
+
+/*=========================================================================================================================================================================*/
+
+#form {
+    display: flex;
+
+    /* Propriedades de aparencia */
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+
+    /* Propriedades de posição */
+    align-items: center;
+    padding: 1.5vh 3vw;
+}
+
+#form > h1 {
+    margin-top: auto;
+}
+
+#nome{
+    width: 100%;
+}
+
+#button-register {
+    margin: 4vh 0vw;
+    color: rgb(26, 26, 26);
+    font-size: 2vh;
+    font-weight: bolder;
+    font-style: italic;
+
+    width: 20vw;
+
+    align-items: center;
+}
+
+#button-register {
+font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #C447FF;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #C447FF;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+#button-register:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #C447FF;
+  z-index: -1;
+}
+
+#button-register:hover, #button-register:focus {
+  color: white;
+}
+
+#button-register:hover:before, #button-register:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+#button-register:active {
+  transform: scale(0.9);
+}
+
+/*Mensagens de erro*/
+p.msn-erro {
+    color: red;
+    margin: 0;
+    font-size: 1.5vh;
+}
+
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+
+}

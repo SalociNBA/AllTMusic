@@ -1,0 +1,164 @@
+body {
+    margin: none;
+    display: flex;
+    flex-direction: column;
+}
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+
+    width: 100%;
+}
+
+#form-descontos {
+    display: flex;
+    flex-direction: column;
+
+    height: 40vh;
+    width: 100%;
+}
+
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type=number], select {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+input[type=file] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Tabela display de produtos que possuem descontos */
+tr {
+    border: solid 1px gray;
+}
+td {
+    border: solid 1px gray;
+}
+
+/* Coluna da imagem */
+
+#desconto-image-display {
+    background-color: #ebebeb;
+}
+.colum-image {
+    text-align: center;
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    width: 10%;
+
+    border-left: none;
+    border-right: none;
+}
+.colum-image > img{
+    width: 10vw;
+}
+
+/* coluna do nome do produto */
+
+#desconto-name-display {
+
+    background-color: #ebebeb;
+    
+}
+
+.colum-nome {
+    text-align: center;
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    width: 60%;
+
+    border-left: none;
+    border-right: none;
+}
+
+/* coluna do desconto do produto */
+
+#desconto-desconto-display {
+
+    background-color: #ebebeb;
+    
+}
+
+.colum-desconto {
+    text-align: center;
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    width: 10%;
+
+    border-left: none;
+    border-right: none;
+}
+
+/* coluna do remover do produto */
+
+#desconto-remover-display {
+
+    background-color: #ebebeb;
+    
+}
+
+.colum-remover {
+    text-align: center;
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    width: 30%;
+
+    border-left: none;
+    border-right: none;
+}
+.colum-remover > a {
+    border: none;
+    border-radius: 0.7vh;
+
+    color: white;
+    text-decoration: none;
+    align-content: center;
+    font-size: 1.5vh;
+
+    background-color: red;
+
+    padding: 1.3vh 1.5vw;
+}

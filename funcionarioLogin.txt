@@ -1,0 +1,25 @@
+$tipoEmail = explode("@", $email);
+
+//Identificação se o login foi feito por um usuário ou por um funcionário
+        if ($tipoEmail[1] == "worker.tmusic.com" ) {
+            //Parte dos funcionários fazerem login
+
+            $sqlSearch = "SELECT * FROM funcionarios WHERE e_mail = '$email' AND senha = '$password'";
+            $sqlQuery = mysqli_query($conexao ,$sqlSearch);
+
+            //Puxando os dados para usar na sessão
+            $quantidade = $sqlQuery->num_rows;
+
+            $usuario = mysqli_fetch_assoc($sqlQuery);
+            if(!isset($_SESSION)) {
+                session_start();
+            };
+            if($quantidade == 1) {
+
+                $_SESSION['nome'] = $usuario['nome'];
+                $_SESSION['cpf'] = $usuario['cpf'];
+                $_SESSION['rf'] = $usuario['rf'];
+
+                header('location: ../html/pag-index.php');
+
+            };
